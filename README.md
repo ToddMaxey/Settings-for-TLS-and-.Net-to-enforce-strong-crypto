@@ -15,7 +15,7 @@ Enabled TLS1.2 and TLS 1.3 for both client and server.
 
 Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above.
 
-#############################################################################################################
+###########################################################################################################
 
 Windows Registry Editor Version 5.00
 
