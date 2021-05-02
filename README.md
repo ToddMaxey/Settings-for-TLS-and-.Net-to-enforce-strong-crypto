@@ -3,11 +3,16 @@
 
 The REG file here set the following:
 
-.Net v2 and v4 to use system TLS settings and enforce strong cryptographic protocols
-WinHTTP to use TLS 1.2
-Enabled SChannel logging for errors as warnings
-Disabled SSL2, SSL3, TLS1, and TLS1.1 for both client and server
-Enabled TLS1.2 and TLS 1.3 for both client and server
+.Net v2 and v4 to use system TLS settings and enforce strong cryptographic protocols.
+
+WinHTTP to use TLS 1.2.
+
+Enabled SChannel logging for errors as warnings.
+
+Disabled SSL2, SSL3, TLS1, and TLS1.1 for both client and server.
+
+Enabled TLS1.2 and TLS 1.3 for both client and server.
+
 Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above.
 
 #############################################################################################################
