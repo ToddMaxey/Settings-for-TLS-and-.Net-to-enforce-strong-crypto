@@ -13,7 +13,7 @@ Disabled SSL2, SSL3, TLS1, and TLS1.1 for both client and server.
 
 Enabled TLS1.2 and TLS 1.3 for both client and server.
 
-Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above.
+Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above at this time.
 
 ###########################################################################################################
 
