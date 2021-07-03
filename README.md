@@ -13,6 +13,8 @@ Enabled SChannel logging for errors as warnings.
 
 Disabled SSL2, SSL3, TLS1, and TLS1.1 for both client and server.
 
+Disable RC4.
+
 Enabled TLS1.2 and TLS 1.3 for both client and server.
 
 Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above at this time.
@@ -21,21 +23,21 @@ Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above at t
 
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v2.0.50727]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727] 
 
-"SystemDefaultTlsVersions"=dword:00000001
-"SchUseStrongCrypto"=dword:00000001
+"SystemDefaultTlsVersions"=dword:00000001 
+"SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v4.0.30319]
-"SystemDefaultTlsVersions"=dword:00000001
-"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319] 
+"SystemDefaultTlsVersions"=dword:00000001 
+"SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v2.0.50727]
-"SystemDefaultTlsVersions"=dword:00000001
-"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727] 
+"SystemDefaultTlsVersions"=dword:00000001 
+"SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v4.0.30319]
-"SystemDefaultTlsVersions"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] 
+"SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
@@ -108,3 +110,21 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server]
 "Enabled"=dword:00000001
 "DisabledByDefault"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]
+"Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128] 
+"Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
+"Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
+"Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
+"Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
+"Enabled"=dword:00000000
