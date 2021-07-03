@@ -1,7 +1,6 @@
 # Settings-for-TLS-and-.Net-to-enforce-strong-crypto
 
-The PowerShell script is the REG file + it disabled RC4
-
+The PowerShell script is the same as the REG file
 
 The REG file here set the following:
 
