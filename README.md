@@ -23,7 +23,6 @@ Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above at t
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727] 
-
 "SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001 
 
@@ -40,10 +39,10 @@ Windows Registry Editor Version 5.00
 "SchUseStrongCrypto"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
-"DefaultSecureProtocols"=dword): 0x800
+"DefaultSecureProtocols"=dword:0x800
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
-"DefaultSecureProtocols"=dword: 0x800
+"DefaultSecureProtocols"=dword:0x800
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL]
 "EventLogging"=dword:00000003
@@ -111,16 +110,22 @@ Windows Registry Editor Version 5.00
 "DisabledByDefault"=dword:00000000
 
 [HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]
 "Enabled"=dword:00000000
 
 [HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128] 
 "Enabled"=dword:00000000
 
 [HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
 "Enabled"=dword:00000000
 
 [HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
 "Enabled"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
 
 [HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
 "Enabled"=dword:00000000
