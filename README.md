@@ -22,19 +22,19 @@ Note TLS 1.3 is only supported on the Windows 10 build 10.0.18362 and above at t
 
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v2.0.50727] 
 "SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319] 
 "SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v2.0.50727] 
 "SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319] 
 "SystemDefaultTlsVersions"=dword:00000001 
 "SchUseStrongCrypto"=dword:00000001
 
