@@ -464,8 +464,12 @@ else
 {
 Write-host "The Path $($TLS_1_Path)Server does not exist" -ForegroundColor Red
 }
-
-
+# Pause so user can review the current setting before proceeding
+Write-Host " "
+Write-Host "Review the current setting before proceeding" -ForegroundColor Red
+Write-Host " "
+Write-Host "Pausing.... Hit Enter to continue or ctrl+c to escape" -ForegroundColor yellow
+Read-host " "
 # .Net settings to force Strong crypto and use system TLS settings
 
 New-ItemProperty –Path "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\" -Name SystemDefaultTlsVersions -PropertyType "DWORD" -value "00000001" -Force
