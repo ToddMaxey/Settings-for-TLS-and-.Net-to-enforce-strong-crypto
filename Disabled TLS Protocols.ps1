@@ -545,8 +545,9 @@ New-ItemProperty –Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProvide
 }
 {else Write-host "OS is not the right version for TLS 1.3"} 
 
-#WinHttp setting to TLS 1.2
-New-ItemProperty –Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp" -Name "DefaultSecureProtocols" -PropertyType "DWORD" -value 0x800  -Force
+#WinHttp setting to TLS 1.2 and TLS 1.3
+New-ItemProperty –Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp" -Name "DefaultSecureProtocols" -PropertyType "DWORD" -value 0x2800  -Force
+New-ItemProperty –Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp" -Name "DefaultSecureProtocols" -PropertyType "DWORD" -value 0x2800  -Force
 
 $Multi_Protocol_Unified_Hello_Path = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\"
 $Multi_Protocol_Unified_Hello_Client_DisabledByDefault = $null
