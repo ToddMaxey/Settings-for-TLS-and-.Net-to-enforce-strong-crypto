@@ -9,7 +9,7 @@ Write-Host "The WinHTTP setting will be set to use TLS 1.2" -ForegroundColor Gre
 Write-Host " "
 Write-Host "It will also disabled SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1, RC4 Ciphers and enabled TLS 1.2 and if this is a Windows 10 build 18362+ it will enabled TLS 1.3" -ForegroundColor Green
 Write-Host " "
-Write-Host "This script maakes registry changes! Be sure to have a backup of the machine before proceesing" -ForegroundColor Red
+Write-Host "This script makes registry changes! Be sure to have a backup of the machine before proceesing" -ForegroundColor Red
 Write-Host " "
 Write-Host "Pausing.... Hit Enter to continue or ctrl+c to escape" -ForegroundColor yellow
 Read-host " "
